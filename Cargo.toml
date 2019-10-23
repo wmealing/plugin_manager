@@ -7,4 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-logger = { git = "https://github.com/wmealing/logger", branch = "master" }
+# logger = { git = "https://github.com/wmealing/logger", branch = "master" }
