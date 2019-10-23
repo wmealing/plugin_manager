@@ -6,7 +6,6 @@ pub trait Events {
         "k".to_string()
     }
     fn on_output(&mut self, _s: &String) {}
-
     fn on_shutdown(&self) {}
     fn on_pre_read(&self) {}
     fn on_post_read(&self) {}
@@ -18,6 +17,7 @@ pub struct PluginManager {
 
 impl PluginManager {
     pub fn new() -> Self {
+        println!("Plugin Manager new !");
         Self { hooks: Vec::new() }
     }
     pub fn add_events_hook<E: Events + 'static>(&mut self, hook: E) {
